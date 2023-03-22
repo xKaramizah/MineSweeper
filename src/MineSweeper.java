@@ -36,7 +36,6 @@ public class MineSweeper {
 
     void run() {
         setupMap();
-        printMineMap();
         System.out.println("Mayın tarlası oyununa hoş geldiniz.\n" + "Oyun başlıyor..\n");
         printGame();
         while (this.winCounter != 0) {
@@ -126,16 +125,16 @@ public class MineSweeper {
         return count;
     }
 
-    void printMineMap() {
-        System.out.println("Mayın Haritası: ");
-        for (int i = 0; i < rowNo; i++) {
-            for (int j = 0; j < colNo; j++) {
-                System.out.print(" " + this.mineMap[i][j]);
-            }
-            System.out.println();
-        }
-        System.out.println("===================");
-    }
+//    void printMineMap() {
+//        System.out.println("Mayın Haritası: ");
+//        for (int i = 0; i < rowNo; i++) {
+//            for (int j = 0; j < colNo; j++) {
+//                System.out.print(" " + this.mineMap[i][j]);
+//            }
+//            System.out.println();
+//        }
+//        System.out.println("===================");
+//    }
 
     void printGame() {
         System.out.print("BOARD: \n" + "   ");
